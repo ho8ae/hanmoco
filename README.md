@@ -33,3 +33,7 @@
 :CSS 너비 높이 색 관련 명령어 
 
 공부하고, 서로 코드를 만들어보며 부족한 부분들을 공유하고, 피드백.
+
+![한모코 1주차](https://user-images.githubusercontent.com/126559845/226876920-fe8a9c66-b6d4-447a-8df9-b6e0a99acbd2.jpg)
+
+
