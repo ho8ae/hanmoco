@@ -1,0 +1,50 @@
+package triangle;
+
+class Triangle{
+	
+	//맴버 변수
+	double Bottom;
+	double Height;
+	
+	//밑변과 높이를 초기화 하는 맴버메소드
+	void init(double bottom, double height) {
+		this.Bottom = bottom;
+		this.Height = height;
+	}
+	
+	//삼각형의 넓이를 구하는 맴버메소드
+	double getArea() {
+		double result = (Bottom * Height) / 2.0;
+		return result;
+	}
+	
+	//밑변을 설정
+	void setBottom(double bottom) {
+		this.Bottom = bottom;
+	}
+	
+	//높이를 설정
+	void setHeight(double height) {
+		this.Height = height;
+	}
+	
+}
+ 
+public class TriangleExam {
+	public static void main(String[] args) {
+		Triangle t = new Triangle();
+		t.init(10, 17); //밑변10, 높이17로 초기화
+		System.out.println("삼각형의 넓이 : " + t.getArea());
+		t.setBottom(50);//밑변 50으로 변경
+		t.setHeight(14);//높이 14로 변경
+		System.out.println("삼각형의 넓이 : " + t.getArea());
+ 
+ 
+	}
+	
+}
+
+
+출력 결과
+삼각형의 넓이 : 85.0
+삼각형의 넓이 : 350.0
