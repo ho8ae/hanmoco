@@ -1,0 +1,21 @@
+h1 {
+  background-color: yellow;
+  width: 300px;
+  text-align: center;
+}
+
+ol {
+  margin-left: 100px;
+  color: black;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  background-color: beige;
+  color: red;
+}
+
+a {
+  color: violet;
+}
