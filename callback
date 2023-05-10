@@ -1,0 +1,23 @@
+    <script>
+      const callback = () => {
+        //5번 생성된 난수에서 가장 큰 값 반환
+        let max = 0,
+          value;
+        for (let i = 1; i <= 5; i++) {
+          value = Math.floor(Math.random() * 100) + 1;
+          console.log(`콜백함수 실행(${i}) : ${value}`);
+          if (value > max) max = value;
+        }
+        return max;
+      };
+
+      const func_call = (f_call) => {
+        //매개변수로 받은 함수를 3번 호출
+        for (let i = 0; i < 3; i++) {
+          console.log(`콜백함수 ${i} 번째 호출`);
+          console.log(f_call());
+        }
+      };
+
+      func_call(callback);
+    </script>
