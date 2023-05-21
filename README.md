@@ -142,6 +142,6 @@ Css 속성( box속성 가시속성)에 대한 학습
 이처럼 같은 문제의 다른 접근을 통해 여러가지 알고리즘이 존재함을 발견했다.
 
 지성(지원 호성)팀-
-![5주차](https://github.com/ho8ae/hanmoco/assets/126559845/ecfe09e0-802c-463b-96ac-dc957350cd
+![5주차](https://github.com/ho8ae/hanmoco/assets/126559845/ecfe09e0-802c-463b-96ac-dc957350cd1a)
 ![5주차](https://github.com/ho8ae/hanmoco/assets/126559845/9efc3564-fc85-494d-9e39-e6c3188a5b70)
-1a)
+
