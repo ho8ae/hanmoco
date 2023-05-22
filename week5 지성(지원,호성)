@@ -1,0 +1,37 @@
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<title>Document</title>
+<style>
+.hallym:nth-child(even) { 
+background-color: yellow; 
+width: 100px;
+}
+.hallym:nth-child(odd) { 
+background-color: gray; 
+width: 100px;
+}
+</style> 
+</head><body>
+<h2>css 셀렉터   사용하기</h2>
+<h4 class="hallym">css3</h4>
+<h4 class="hallym">html</h4>
+<h4 class="hallym">JavaScript</h4> 
+<h4 class="hallym">TypeScript</h4> 
+<h4 class="hallym">jQuery</h4>
+<script>
+const elements = document.querySelectorAll('.hallym'); 
+elements.forEach((element, index) => {
+if (index % 2 === 0) {
+element.style.backgroundColor = 'yellow'; 
+} else {
+element.style.backgroundColor = 'gray'; 
+}
+element.style.width = '100px'; 
+});
+</script> 
+</body>
+
+    
+
