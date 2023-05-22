@@ -1,0 +1,46 @@
+//민규
+class Solution {
+    public int solution(int[] numbers) {
+        int answer = 0;
+        int max1 = 0;
+        int max2 =0;
+        int num = 0;
+        for(int i=0; i<numbers.length; i++){
+            if(numbers[i]>max1){
+                max1 = numbers[i];
+                num = i;
+            }
+        }
+        for(int i=0; i<numbers.length; i++){
+            if(i==num)continue;
+            if(numbers[i]>max2&&numbers[i]<=max1){
+                max2 = numbers[i];
+            }
+        }
+        answer = max1 * max2;
+        return answer;
+    }
+}
+
+//태호
+class Solution {
+    public int solution(int[] numbers) {
+        int answer = 0;
+        int tmp = 0 ;
+
+        for(int i = 0 ; i <numbers.length; i++){
+            for(int j=i+1; j<numbers.length; j++){
+                if(numbers[i]>numbers[j]){
+                    tmp = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = tmp;
+                }
+            }
+        }
+
+        answer = numbers[numbers.length - 1] * numbers[numbers.length - 2];
+        return answer;
+
+
+    }
+}
