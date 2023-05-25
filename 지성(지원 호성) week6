@@ -1,0 +1,39 @@
+<body>
+  <h1>구입한 물품 목록</h1>
+  <hr>
+  <div id="list"></div>
+</body>
+위 HTML은 기본적으로 주어짐
+      const add = (answer) => {
+        let plist = document.querySelector('#list');
+        let frag = document.createDocumentFragment();
+        answer.forEach((element) => {
+          let newp = document.createElement('p');
+          let newtext = document.createTextNode(
+            `품목 : ${element.item}, \u00a0\u00a0\u00a0 구입개수 : ${element.cnt}`
+          );
+          newp.appendChild(newtext);
+          frag.appendChild(newp);
+        });
+        plist.appendChild(frag);
+      };
+
+      const insert = () => {
+        let arr = new Array();
+        while (true) {
+          let content = prompt(
+            '품목과 개수를 입력하세요\n종료는 취소버튼을 클릭하세요'
+          );
+          if (content == null) {
+            break;
+          }
+          [item, cnt] = content.split(' ');
+          arr.push({ item, cnt });
+        }
+        return arr;
+      };
+
+      window.onload = function () {
+        let dem = insert();
+        add(dem);
+      };
