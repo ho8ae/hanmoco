@@ -1,0 +1,19 @@
+//민규
+class Solution {
+    public int[] solution(int money) {
+        int[] answer = new int[2];
+        int cnt = 0;
+        int left = 0;
+        cnt = money / 5500;
+        left = money - (cnt*5500);
+        answer[0] = cnt;
+        answer[1] = left;
+        return answer;
+    }
+}
+//태호
+class Solution {
+    public int[] solution(int money) {
+        return new int[] { money / 5500, money % 5500 };
+    }
+}
