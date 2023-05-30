@@ -1,0 +1,59 @@
+4주차 
+피보나치_
+public class Fibonacci {
+    public static void main(String[] args) {
+        int n = 10; 
+        System.out.println("print fibonacci:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
+    
+    public static int fibonacci(int num) {
+        if (num <= 1) {
+            return num;
+        } else {
+            return fibonacci(num - 1) + fibonacci(num - 2);
+        }
+    }
+}
+public class Factorial {
+    public static void main(String[] args) {
+        int n = 5;
+        long result = factorial(n);
+        System.out.println(n + "! = " + result);
+    }
+    
+    public static long factorial(int n) {
+        if (n == 0) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+}
+재귀함수로 사용하면 계산 시간이 길어질 수 있고 시간복잡도가 올라간다. 따라서 때로는 반복문이 더 효율적일 수 있다.
+public class GCDandLCM {
+    public static void main(String[] args) {
+        int num1 = 24;
+        int num2 = 36;
+        
+        int gcd = findGCD(num1, num2);
+        int lcm = findLCM(num1, num2, gcd);
+        
+        System.out.println("최대공약수: " + gcd);
+        System.out.println("최소공배수: " + lcm);
+    }
+    
+    public static int findGCD(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return findGCD(b, a % b);
+        }
+    }
+    
+    public static int findLCM(int a, int b, int gcd) {
+        return (a * b) / gcd;
+    }
+}
