@@ -1,0 +1,58 @@
+
+package practice   //패키지 선언
+
+public class 클래스명{  //클래스 선언
+ 	private int age; //속성값 정의
+	private String name; 
+
+	public 생성자명(){}//생성자 정의
+	public 생성자명(매개 변수){}
+
+	public void 메소드명(){//기능 정의
+	}
+
+	public STring 메소드명(){
+	return string값;
+	}
+    }
+    
+    //클래스와 정의에 대해 간단하게 시각적으로 정리
+    
+    public class FunctionTest {
+	//function 1
+	public static int addNum(int num1, int num2 ) {
+		int result;
+		result = num1 + num2;
+		return result;
+	}
+	//function 2
+	public static void sayHello(String greeting) {
+	
+		System.out.println(greeting);
+	}
+	//function 3
+	public static int calSum() {
+		int sum = 0;
+		int i;
+		
+		for (i = 0 ; i<=100; i++) {
+			sum+= i;
+		}
+		return sum;
+	}
+	
+	public static void main(String[] args) {
+		// call function1 
+		int n1= 10;
+		int n2= 20;
+		
+		int total = addNum(n1,n2);
+		System.out.println(total);  // result = 30
+		// call function2
+		sayHello("반갑습니다"); // result = 반갑습니다.
+		// call function3 
+		int num = calSum();
+		System.out.println(num); // 5950
+
+	}
+}
