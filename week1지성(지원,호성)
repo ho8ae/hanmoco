@@ -1,0 +1,47 @@
+1주차
+문제1) 제시되어 있는 표의 스타일을 적용해 보기 
+<style>
+.x1 {
+color: aqua; 
+}
+.x2 {
+color: blue; 
+}
+.x3 {
+color: blueviolet; 
+}
+.x4 {color: brown; 
+}
+.x5 {
+color: yellow; 
+}
+.x6 {
+color: tomato; 
+}
+.x7 {
+color: darkseagreen; 
+}
+</style>
+2) 제시된 표를 다음 조건에 맞춰서 스타일을 적용하는 코드를 짠다
+조건 1) 아이디와 클래스 선택자만 사용
+조건 2) 박스로 표시된 부분은 속성 선택자 사용 
+조건 3) 색상은 본인이 임의로 선택할 것
+조건 4) 스타일 시트는 Embedding style 방법으로 작성
+<style> 
+input[id] {
+background-color: goldenrod; 
+}
+.c1 {
+color: aliceblue; 
+background-color: blueviolet;
+} 
+.c2 {
+background-color: antiquewhite; 
+}
+.c3 {
+background-color: darkturquoise; 
+}
+.c4 {
+background-color: dodgerblue; 
+}
+</style>
