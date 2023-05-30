@@ -1,0 +1,53 @@
+4주차
+문제1) 1~100  사이의    난수를    5개    생성하여    가장    큰    값을    반환하는    콜백    함수    callback()을    함수    표현식으로    구현하고   callback()  콜백   함수를    매개변수로    받아    3번    호출하는    고차    함수    func_call()을   구현하는 코드를 짜본다.
+<script>
+const callback = () => { 
+let max = 0,
+value;
+for (let i = 1; i <= 5; i++) {
+value = Math.floor(Math.random() * 100) + 1; 
+console.log(`콜백함수   실행(${i}):${value}`); 
+if (value > max) max = value;
+}
+return max; 
+};
+const func_call = (f_call) => {
+for (let i = 0; i < 3; i++) {
+console.log(`콜백   함수    ${i} 번째   호출`); 
+console.log(f_call());
+} 
+};
+func_call(callback); 
+</script>
+ 문제2)
+6자리숫자를 사용하여 369게임을 하는데 3, 6, 9  숫자일 때 ‘박수짝’을 출력하며 박수를 많이 받은 사람이 승자가 되는 프로그램을 작성 이때 사용자는 두명으로 입력받는다.
+<script>
+let user1 = prompt('사용자 1'); 
+let user2 = prompt('사용자 2');
+const game = (user) => { 
+let cnt = 0;
+let random = Math.floor(Math.random() * 1000000); // 0~999999 중    랜덤한   수를 
+생성한다.
+console.log(`\n${user} 사용자`);
+console.log('생성된   난수    : ', random); 
+let digits = random.toString().split(''); 
+for (let digit of digits) {
+if (digit === '3' || digit === '6' || digit === '9') { 
+console.log('박수짝    ' + ++cnt);
+} 
+}
+console.log('박수   개수   : ' + cnt); 
+return cnt;
+};
+let cnt1 = game(user1);
+let cnt2 = game(user2);
+let resultSt;
+if (cnt1 > cnt2) {
+resultStr = `\n${user1} 사용자가   이겼습니다.`; 
+} else if (cnt1 < cnt2) {
+resultStr = `\n${user2} 사용자가   이겼습니다.`; 
+} else {
+resultStr += `\n 비겼습니다.`; 
+}
+console.log(resultStr); 
+</script>
