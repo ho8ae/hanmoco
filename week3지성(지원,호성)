@@ -1,0 +1,109 @@
+3주차_지성(지원 호성)팀 2023.04.03 활동계획서 선택자(후손선택자, 자손선택자, 인접형제 등)을 이용한 시트 작성 Css 속성( box속성 가시속성)에 대한 학습
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background-color: bisque;
+        width: 500px;
+        margin: auto;
+        padding: 5px;
+      }
+      h2 {
+        color: brown;
+        text-decoration: underline;
+        text-align: center;
+      }
+      ul ol:first-child {
+        margin-bottom: 20px;
+      }
+      span,
+      input {
+        display: none;
+      }
+      input[type='radio']:checked + span {
+        display: inline;
+        color: red;
+        padding-left: 10px;
+      }
+      ol {
+        padding-left: 20px;
+        color: gray;
+      }
+      label {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>질문에 답하세요</h2>
+      <ul>
+        <li>
+          웹 표준이 아닌것은?
+          <ol>
+            <li>
+              <label for="sol1">html</label
+              ><input type="radio" name="ans" id="sol1" /><span
+                >(incorrect)</span
+              >
+            </li>
+            <li>
+              <label for="sol2">JavaScript</label
+              ><input type="radio" name="ans" id="sol2" /><span
+                >(incorrect)</span
+              >
+            </li>
+            <li>
+              <label for="sol3">CSS3</label
+              ><input type="radio" name="ans" id="sol3" /><span
+                >(incorrect)</span
+              >
+            </li>
+            <li>
+              <label for="sol4">TypeScript</label
+              ><input type="radio" name="ans" id="sol4" /><span>(correct)</span>
+            </li>
+          </ol>
+        </li>
+        <li>
+          가상 클래스 선택자가 아닌것은?
+          <ol>
+            <li>
+              <label for="sol5">hover</label
+              ><input type="radio" name="ans1" id="sol5" /><span
+                >(incorrect)</span
+              >
+            </li>
+            <li>
+              <label for="sol6">after</label
+              ><input type="radio" name="ans1" id="sol6" /><span
+                >(correct)</span
+              >
+            </li>
+            <li>
+              <label for="sol7">visited</label
+              ><input type="radio" name="ans1" id="sol7" /><span
+                >(incorrect)</span
+              >
+            </li>
+            <li>
+              <label for="sol8">checked</label
+              ><input type="radio" name="ans1" id="sol8" /><span
+                >(incorrect)</span
+              >
+            </li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+두 객관식 문제를 만들고 답을 클릭하면 정답인지 오답인지 display: none; 속성으로 보이지 않게 했다가 클릭하면 다시 display: inline; 정답 여부가 보이도록 코드를 작성했다. 정답이 나타나게 할 때는 input[type='radio']:checked + span에서 +로 인접 형제 선택자를 사용하였고 ul ol:first-child에는 띄어쓰기를 사용해 후손선택자를 사용하였다. 위 코드에는 사용하지 않았지만 >가 자손선택자라는 내용도 공부했다. 
