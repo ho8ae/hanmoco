@@ -76,7 +76,8 @@ class를 효율적으로 작성하는 연습
 선택자(후손선택자, 자손선택자, 인접형제 등)을 이용한 시트 작성
 Css 속성( box속성 가시속성)에 대한 학습
 
-![한모코 2주](https://github.com/ho8ae/hanmoco/assets/126559845/77f7ff73-bac7-40c1-8390-6e0aef17db2f)
+
+![한모코_2주차](https://github.com/ho8ae/hanmoco/assets/126559845/f1675e93-fef1-4083-a2f2-295c7a9c8d1a)
 
 
 
